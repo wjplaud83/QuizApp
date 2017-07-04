@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e1e1"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="1) Who was the first man in space? \n(one point)"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="rightAnswer"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Yuri Gagarin" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="wrongAnswer"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Alan Shepard" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="wrongAnswer"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Yang Liwei" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:text="2) Which three stars are the nearest to our solar system? \n(three points)"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="rightAnswer"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="Luhman 16 A and B" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="rightAnswer"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="Proxima Centauri" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="rightAnswer"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="Benard's Star" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="wrongAnswer"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="Vega" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="wrongAnswer"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="Kashyyk" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="wrongAnswer"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="Endor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:text="3) What is Pluto? \n(one point)"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="wrongAnswer"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="A planet" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="rightAnswer"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="A dwarf planet" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="wrongAnswer"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Mickey's dog" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:text="4) What is a Parsec? \n(one point)"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="wrongAnswer"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Measurement of time." />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="rightAnswer"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Measurement of distance." />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="wrongAnswer"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Measurement of brain capacity." />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:text="5) How old is the sun? \n(one point)"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="rightAnswer"
+                android:paddingLeft="15dp"
+                android:text="4.5 Billion years old" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="wrongAnswer"
+                android:paddingLeft="15dp"
+                android:text="600,000 years old" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="wrongAnswer"
+                android:paddingLeft="15dp"
+                android:text="As old as your mom." />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:text="6) Pick three planets with rings around them. \n(three points)"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="wrongAnswer"
+            android:paddingLeft="15dp"
+            android:text="Mercury" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="wrongAnswer"
+            android:paddingLeft="15dp"
+            android:text="Pluto" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="wrongAnswer"
+            android:paddingLeft="15dp"
+            android:text="Earth" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="rightAnswer"
+            android:paddingLeft="15dp"
+            android:text="Jupiter" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="wrongAnswer"
+            android:paddingLeft="15dp"
+            android:text="Mars" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="rightAnswer"
+            android:paddingLeft="15dp"
+            android:text="Saturn" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="rightAnswer"
+            android:paddingLeft="15dp"
+            android:text="Uranus" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:text="7) Which two were the first to set foot on the moon? \n(two points)"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="rightAnswer"
+            android:paddingLeft="15dp"
+            android:text="Buzz Aldrin" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="wrongAnswer"
+            android:paddingLeft="15dp"
+            android:text="Jean-Luc Picard" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="rightAnswer"
+            android:paddingLeft="15dp"
+            android:text="Neil Armstrong" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="wrongAnswer"
+            android:paddingLeft="15dp"
+            android:text="Han Solo" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="wrongAnswer"
+            android:paddingLeft="15dp"
+            android:text="Buzz Lightyear" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="wrongAnswer"
+            android:paddingLeft="15dp"
+            android:text="Mark Watney" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:text="8) What is a constellation made of? \n(one point)"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/constellation_Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answer here."
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:text="9) What created the universe? \n(one point)"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/universe_Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answer here."
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="30dp"
+            android:text="10)What is a UFO? \n(one point)"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/ufo_Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answer here."
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/calculate_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:onClick="getResult"
+            android:text="CALCULATE SCORE" />
+    </LinearLayout>
+</ScrollView>
